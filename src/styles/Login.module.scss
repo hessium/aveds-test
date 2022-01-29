@@ -1,0 +1,22 @@
+@import "../styles/color.scss";
+.login{
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    
+    &__content {
+        margin-top: 40px;
+        padding: 25px;
+        min-width: 400px;
+        height: 400px;
+        background:$white;
+        border-radius: 16px;
+
+    }
+
+    &__title {
+      margin: 15px 0;
+    }
+  }
+
+  
