@@ -1,0 +1,271 @@
+@import "../src/styles/color.scss";
+@import "../src/styles/breakpoints.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+  max-width:1400px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  text-align:left;
+  padding-top: 98px;
+  padding-left: 13%;
+
+  @media (max-width: $tablets) {
+    padding-left: 5%;
+  }
+
+  @media (max-width: $phones) {
+    padding-left: 0;
+    padding-top: 57px;
+  }
+    
+  &__content {
+    width: 100%;
+    
+    @media (max-width: $phones) {
+      padding: 0 10px;
+      display: flex;
+      flex-direction:column;    
+    } 
+  }
+
+  &__title{
+    max-width: 730px;
+    font-size: 58px;
+    line-height:80px;
+    margin-bottom:48px;
+    font-weight:bold;
+
+    @media (max-width: $tablets) {
+      font-size: 36px;
+      line-height:39px;
+      
+    }
+    
+    @media (max-width: $phones) {
+      font-size: 28px;
+      line-height:39px;
+      width: 355px;
+      margin-bottom:44px;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 115px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $phones) {
+      margin-bottom:30px;
+    }  
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $orange;
+    height: 52px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;   
+    color: $white;
+    border: 1px solid $orange;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height:22px;
+    font-weight: 700;
+    margin-right:10px;
+
+    &--white{
+      background-color: $white;
+      color: $orange; 
+      margin-right:0;
+      height: 52px;
+      min-width: 239px;
+    }
+
+    &--login { 
+      width: 228px;
+      padding-left:30px;
+      padding-right:30px;
+    }
+
+    &--contacts { 
+      min-width: 155px;
+    }
+
+    @media (max-width: $tablets) {
+      min-width: 128px;
+      font-size: 14px;
+    }
+  
+   
+   
+  } 
+  
+  &__product {
+    min-width:100%;
+    padding-right: 5%;
+  }
+}
+
+.product {
+  &__list {
+    display: flex; 
+    justify-content:left;
+    align-items:center;
+    min-width:100%;
+
+    @media (max-width: $tablets) {
+      flex-direction: column;
+      justify-content:center;
+    }
+
+    @media (max-width: $phones) {
+      padding:0 14px;
+      flex-direction: column;
+    }
+
+  }
+}
+
+.item {
+  width:328px;
+  min-height:248px;
+  padding: 35px 40px;
+  margin-right: 31px;
+  box-shadow: 13px 13px 13px 10px rgba(0, 0, 0, 0.07);
+
+  &:last-child{
+    margin-right:0;
+  }
+
+  @media (max-width: $tablets) {
+    flex-direction: column;
+    width: 75%;
+    margin-bottom: 40px;
+    justify-content:center;
+    align-items:center;
+  }
+
+  @media (max-width: $phones) {
+    width: 328px;
+    margin:0;
+    margin-bottom: 30px;
+    box-shadow: 13px 13px 13px 1px rgba(0, 0, 0, 0.07);
+    padding-left: 48px;
+  }
+
+  &__img {
+    margin-bottom:20px;
+  }
+
+  &__title{
+    margin-bottom:20px;
+    font-size: 16px;
+  }
+
+  &__span {
+    width: 50px;
+    height: 2px;
+    background-color: $red;
+    margin-bottom:20px;
+  }
+
+  &__desc{
+    color: $grey;
+  }
+}
+
+
+
+.login {
+  display: flex;
+  text-align:center;
+  flex-direction:column;
+  align-items:center;
+ 
+  margin-top: 101px;
+
+  &__title {
+    margin:20px 0;
+    font-size: 58px;
+    line-height: 80px;
+    font-weight: bold;
+  }
+
+  &__content {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    min-width: 250px;
+    width: 450px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid $orange;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:focus-visible {
+      outline: 1px solid $grey;
+      border: 1px;
+    }
+  }
+
+  &__button {
+    width: 186px;
+    height: 40px;
+    background-color: $white;
+    border: 1px solid $orange;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $orange;
+
+    @media (max-width: $phones) {
+       width: 100px;
+    }
+  }
+}
+
+.personal {
+  text-align: left;
+  padding-top:  146px;
+  padding-left: 13%;
+
+  &__title {
+    font-size: 58px;
+    margin-bottom:30px;
+  }
+
+}
+
+.contacts {
+  padding-left: 197px;
+  margin-top: 13%;
+  text-align:left;
+  font-size: 29px;
+  line-height: 80px;
+  display:flex;
+  align-items: center;  
+}
+
+
