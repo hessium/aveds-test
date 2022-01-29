@@ -1,0 +1,71 @@
+[
+    {  
+      "name": "Leanne",
+      "login": "Bret",
+      "password": "12345"
+  
+    },
+    {
+      
+      "name": "Ervin",
+      "login": "Antonette",
+      "password": "258852"
+  
+    },
+    {
+      
+      "name": "Clementine",
+      "login": "Samantha",
+      "password": "54321"
+    
+    },
+    {
+      
+      "name": "Patricia",
+      "login": "Karianne",
+      "password": "1234554321"
+   
+    },
+    {
+     
+      "name": "Chelsey",
+      "login": "Kamren",
+      "password": "369963"
+   
+    },
+    {
+      
+      "name": "Dennis",
+      "login": "Leopoldo_Corkery",
+      "password": "147741"
+   
+    },
+    {
+     
+      "name": "Kurtis",
+      "login": "Elwyn.Skiles",
+      "password": "123321"
+     
+    },
+    {
+      "id": 8,
+      "name": "Nicholas",
+      "login": "Maxime_Nienow",
+      "password": "852258"
+    
+    },
+    {
+      
+      "name": "Glenna",
+      "login": "Delphine",
+      "password": "741147"
+      
+    },
+    {
+      
+      "name": "Clementina",
+      "login": "Moriah.Stanton",
+      "password": "963369"
+     
+    }
+  ]
