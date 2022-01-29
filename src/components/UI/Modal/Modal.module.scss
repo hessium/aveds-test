@@ -1,0 +1,70 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/breakpoints.scss";
+
+.myModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0, 0.5);
+  text-align: center;
+}
+
+.myModalContent {
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  min-width: 250px;
+  width: 450px;
+}
+
+.myModal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myModalTitle {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.myModalCancel {
+  cursor: pointer;
+}
+
+.myInput{
+  
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid $orange;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    &:focus-visible {
+      outline: 1px solid $grey;
+      border: 1px;
+    }
+      
+}
+
+.myButton{
+  width: 186px;
+  height: 40px;
+  background-color: $white;
+  border: 1px solid $orange;
+  border-radius:5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: $orange;
+
+  @media (max-width: $phones) {
+      width: 100px;
+    }
+}
