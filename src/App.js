@@ -47,7 +47,7 @@ function App() {
                key={route.path}
              />
              )}   
-                          
+                <Redirect to="/login"/>          
           </Switch>
           
            } 
